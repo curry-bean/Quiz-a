@@ -1,0 +1,29 @@
+.card{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 10px;
+}
+li{
+    list-style-type: none;
+    cursor:pointer;
+    margin: 10px;
+
+}
+li .card:hover{
+    border: 1px solid orange;
+
+}
+
+ol{
+    padding: 0;
+}
+button[disabled]{
+    color: aliceblue;
+    border: 1px white;
+}
+
+div.active {
+    background-color: #0275E7;
+    color: #ffff;
+ /* background-color: rgb(201, 205, 248); */
+}
