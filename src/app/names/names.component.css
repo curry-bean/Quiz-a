@@ -1,0 +1,181 @@
+* {
+	 margin: 0;
+	 padding: 0;
+	 box-sizing: border-box;
+}
+ body {
+	 font-family: Verdana, Geneva, Tahoma, sans-serif;
+	 background-color: #eef0f7;
+	 display: grid;
+	 place-items: center;
+	 min-height: 100vh;
+   
+	 overflow: hidden;
+	 z-index: -1;
+}
+ .container {
+	 background-color: #fff;
+	 width: auto;
+	 height: auto;
+	 position: relative;
+
+   /* display: grid;
+	 grid-template-columns: auto auto; */
+	 place-items: center;
+	 line-height: 1.5;
+	 box-shadow: 0 20px 30px rgba(0, 0, 0, 0.185);
+}
+ .container::after {
+	 content: '';
+	 position: absolute;
+	 background-image: linear-gradient(to bottom right, #ff9ec4, #ffd07e);
+	 width: 900px;
+	 height: 900px;
+	 border-radius: 50%;
+	 z-index: -1;
+}
+ .container-close {
+	 position: absolute;
+	 top: -15px;
+	 right: -15px;
+	 background-color: #fff;
+	 width: 45px;
+	 height: 45px;
+	 display: grid;
+	 place-items: center;
+	 font-size: 1.7rem; 
+	 color: #2e4052;
+	 border-radius: 50%;
+	 box-shadow: 0 10px 20px rgba(0, 0, 0, 0.164);
+	 cursor: pointer;
+}
+ .container img {
+	 width: 300px;
+	 height: 420px;
+	 object-fit: cover;
+	 object-position: center;
+	 border-radius: 10px 10px 10px 10px;
+	 padding-top: 4px;
+}
+ .container-text {
+	 padding: 10px 80px 10px 10px;
+}
+
+ .container-text h2 {
+	 font-size: 1.2rem;
+	 color:white;
+}
+ .container-text p {
+	 font-size: 14px;
+	 color: white;
+	 margin: 10px 0;
+}
+ .container-text input, .container-text button {
+	 width: 100%;
+	 border: none;
+	 padding: 14px;
+	 border-radius: 3px;
+}
+ .container-text input {
+	 border: 2px solid #ffffff;
+	 margin: 5px 0 10px;
+	 font-size: 1rem;
+	 color: #656880;
+}
+ .container-text button {
+	 background-image: linear-gradient(to right,rgb(255, 216, 145), orange, rgb(255, 213, 134));
+	 display: block;
+	 color: #fff;
+	 font-size: 1rem;
+	 cursor: pointer;
+	 box-shadow: 0 5px 20px #89caff 94;
+	 transition: box-shadow 0.3s ease-in-out;
+}
+ .container-text button:hover {
+	 box-shadow: none;
+}
+ .container-text span {
+	 display: block;
+	 text-align: center;
+	 margin: 20px 0 0;
+	 color: #babdcb;
+	 font-size: 12px;
+}
+.im{
+  content: '';
+	 position: absolute;
+	 background-image: linear-gradient(to bottom right, #ff9ec4, #ffd07e);
+	 width: 900px;
+	 height: 10px;
+	 border-radius: 50%;
+	 z-index: -1;
+}
+ 
+
+
+.fh5co-top-banner{
+    padding-top: 8px;
+}
+input[type=text] {
+    width: 140%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    background-color: rgb(42, 33, 33);
+    color: aliceblue;
+  }
+
+  input[type=email] {
+    width: 140%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    background-color: rgb(42, 33, 33);
+    color: aliceblue;
+  }
+  :focus {
+    border: 3px solid #555;
+  }
+
+
+  aside {
+    visibility: hidden;
+    opacity: 0;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* background: rgba(0, 0, 0, 0.2);
+    transition: opacity 250ms ease-in; */
+ }
+  aside.open {
+    visibility: inherit;
+    opacity: 1;
+ }
+  aside > div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: auto;
+    width: auto;
+    background: white;
+    padding: 64px;
+    border-radius: 8px;
+    box-shadow: 0 0 8px 4px rgba(0, 0, 0, 0.1);
+ }
+  aside button.close {
+    background: none;
+    color: inherit;
+    border: none;
+    font: inherit;
+    cursor: pointer;
+    outline: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 16px;
+ }
+  
