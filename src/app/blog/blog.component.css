@@ -1,0 +1,95 @@
+
+nav .menuItems {
+    list-style: none;
+    padding:4px;
+    /* display: flex; */
+}
+.container{
+    margin-bottom: 40px;
+
+}
+
+nav .menuItems li a {
+    text-decoration: none;
+    color: #8f8f8f;
+    font-size: 24px;
+    font-weight: 400;
+    transition: all 0.5s ease-in-out;
+    position: relative;
+    text-transform: uppercase;
+}
+nav .menuItems li a::before {
+    content: attr(data-item);
+    transition: 0.5s;
+    color: #8254ff;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 0;
+    overflow: hidden;
+}
+nav .menuItems li a:hover::before {
+    width: 100%;
+    transition: all 0.5s ease-in-out;
+}
+
+
+/* modal */
+
+aside {
+    visibility: hidden;
+    opacity: 0;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    bottom: 100%;
+     /* background: rgba(0, 0, 0, 0.2); */
+    transition: opacity 250ms ease-in; 
+ }
+  aside.open {
+    visibility: inherit;
+    opacity: 1;
+ }
+  aside > div {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 300%);
+    height: auto;
+    width: auto;
+    background: white;
+    padding: 64px;
+    border-radius: 8px;
+    box-shadow: 0 0 8px 4px rgba(0, 0, 0, 0.1);
+ }
+  aside button.close {
+    background: none;
+    color: inherit;
+    border: none;
+    font: inherit;
+    cursor: pointer;
+    outline: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 16px;
+ }
+  
+ @media (max-width: 620px) {
+    aside {
+        visibility: hidden;
+        opacity: 0;
+        display: block;
+        position: absolute;
+        top: -1%;
+        left: 0;
+        right: 0;
+        bottom: 100%;
+         /* background: rgba(0, 0, 0, 0.2); */
+        transition: opacity 250ms ease-in; 
+     } 
+ }
