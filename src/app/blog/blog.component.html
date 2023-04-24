@@ -1,0 +1,338 @@
+
+<!-- Top banner -->
+<section class="fh5co-top-banner">
+    <div class="top-banner__inner site-container">
+    <div class="container p-5  text-white text-center bg-light">
+        <nav>
+            <ul class="menuItems">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <li><a href='#tests' >Tests</a></li>
+                    </div>
+                    <div class="col-sm-3">
+                        <li><a href='#pathway' >Pathway</a></li>
+                    </div>
+                    <div class="col-sm-3">
+                        <li><a routerLink="/names">Sign In</a></li>
+                    </div>
+                    <div class="col-sm-3">
+                        <li><a routerLink="#contact">Contact</a></li>
+                    </div>
+                </div>
+            </ul>
+          </nav>
+    </div>
+  
+
+
+
+
+    </div>
+</section>
+<!-- Top banner end -->
+
+<!-- About me -->
+<section class="fh5co-about-me">
+    <div class="about-me-inner site-container">
+        <article class="portfolio-wrapper">
+            <div class="portfolio__img">
+                <img src="assets/images/Quizz masha.jpg" class="about-me__profile" alt="about me profile picture">
+            </div>
+            <div class="portfolio__bottom">
+                
+                <p></p>
+            </div>
+        </article>
+        <div class="about-me__text" id="home">
+            <div class="about-me-slider">
+                <div class="about-me-single-slide">
+                    <div class="portfolio__name">
+                        
+                        <h2 class="universal-h2"><span style="font-size: 64px;color: orange;">Q</span>uizz Masha</h2>
+                    </div>
+                    <h5 class="p-white">Our Tests are Certified </h5>
+
+                    <h4>Home of local talent</h4>
+
+                    <br>
+                    <div class="books-brand-button">
+                        <a href="#tests" class="brand-button">
+                            <button class="btn btn-warning">
+                                Take  a Test
+                            </button>
+                        </a>
+                    </div>
+                    <br>
+                    <h2 class="universal-h2 universal-h2-bckg"></h2>
+
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <div class="about-me-bckg"></div>
+</section>
+<!-- About me end -->
+
+<!-- Books and CD -->
+<section class="fh5co-books" id="tests">
+    <div class="site-container">
+        <h2 class="universal-h2 universal-h2-bckg">Tests</h2>
+        <div class="books">
+            <div class="single-book">
+                <a  class="single-book__img">
+                    <img src="assets/images/h.png" style="height: 150px;width: 150px;" alt="single book and cd">
+                    <div class="single-book_download">
+                        <img src="assets/images/download.svg" alt="book image">
+                    </div> -->
+                </a> 
+                <h4 class="single-book__title" id="html">Html</h4>
+                <span class="single-book__price">
+                    
+                            <button (click)="startQuizH()" class="btn btn-warning" >start Quiz</button>
+                        
+
+                    
+                </span>
+               
+            </div>
+            <div class="single-book">
+                <a class="single-book__img">
+                    <img src="assets/images/wordp.png" style="height: 150px;width: 150px;" alt="single book and cd">
+                    <div class="single-book_download">
+                        <img src="assets/images/download.svg" alt="book imag]e">
+                    </div>
+                </a>
+                <h4 class="single-book__title" id="WordPress">Wordpress</h4>
+                <span class="single-book__price">
+                        
+                            <button  (click)="startQuizW()" class="btn btn-warning" >Start Quiz</button>
+                        
+
+                    
+                </span>
+              
+            </div>
+            <div class="single-book">
+                <a class="single-book__img">
+                    <img src="assets/images/js1.png" style="height: 150px;width: 150px;" alt="single book and cd">
+                    <div class="single-book_download">
+                        <img src="assets/images/download.svg" alt="book image">
+                    </div>
+                </a>
+                <h4 class="single-book__title" id="JsBasic">JavaScript(Basic)</h4>
+                <span class="single-book__price">
+
+                        <button (click)="startQuizB()" class="btn btn-warning" >Start Quiz</button>
+                    
+                        
+                   
+                </span>
+              
+            </div>
+            <div class="single-book">
+                <a  class="single-book__img">
+                    <img src="assets/images/js1.png" style="height: 150px;width: 150px;" alt="single book and cd">
+                    <div class="single-book_download">
+                        <img src="assets/images/download.svg" alt="book image">
+                    </div>
+                </a>
+                <h4 class="single-book__title">JavaScript(Intermediate)</h4>
+                
+                <span class="single-book__price">
+                    
+                            <button (click)="startQuizI()" class="btn btn-warning" >Start Quiz</button>
+
+                        
+                    
+                    
+                </span>
+              
+            </div>
+        </div>
+        <div class="books-brand-button">
+            <a class="brand-button" routerLink="/names">
+               
+                    Sign In
+               
+            </a>
+        </div>
+    </div>
+</section>
+<!-- Books and CD end -->
+
+<!-- Counter -->
+<div class="fh5co-counter counters">
+    <div class="counter-inner site-container">
+        <div class="single-count">
+            <span class="count" data-count="4">0</span>
+            <div class="single-count__text">
+                <img src="assets/images/counter-1.png" alt="counter icon">
+                <p>Quizes</p>
+            </div>
+        </div>
+        <div class="single-count">
+            <span class="count" data-count="300">0</span>
+            <div class="single-count__text">
+                <img src="assets/images/counter-2.png" alt="counter icon">
+                <p>Scores</p>
+            </div>
+        </div>
+        <div class="single-count">
+            <span class="count" data-count="25">0</span>
+            <div class="single-count__text">
+                <img src="assets/images/counter-4.png" alt="counter icon">
+                <p>Certifications</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Counter -->
+
+<!-- modal -->
+<ng-container *ngIf="display$ | async as display">
+    <aside [class.open]="display === 'open'"
+             (click)="close()">
+      <div (click)="$event.stopPropagation()">
+        <button class="close"
+                type="button" 
+                (click)="close()">X
+        </button>
+
+        <div class="center-text">
+            <h4><mark>Kindly Input ID to access Quiz</mark></h4>
+        </div>
+        <form [formGroup]="IdForm" (ngSubmit)="onSubmit()">
+            <label for="exampleInputEmail1" class="form-label"></label>
+            <input type="text" formControlName="id" placeholder="User Id" #Uid class="form-control" [ngClass]="{ 'is-invalid': submitted }"  id="inputId">
+            <br>
+            
+            <button type="submit" class="btn btn-warning">Submit</button>
+            <br>
+            <br>
+            <p>NB. To generate your User Id,you need to <a routerLink="/names">Sign in</a></p>
+        </form>
+      </div>
+    </aside>
+  </ng-container>
+<!-- modal -->
+<!-- Blog -->
+<section class="fh5co-blog" id="pathway">
+    <div class="site-container">
+        <h2 class="universal-h2 universal-h2-bckg">Frontend Web Developer Pathway</h2>
+        <div class="blog-slider blog-inner">
+            <div class="single-blog">
+                <div class="single-blog__img">
+                    <img src="assets/images/html.jpeg"style="height:300px;width:170px;"  alt="blog image">
+                </div>
+                <div class="single-blog__text">
+                    <h4>HTML</h4>
+                    <span>On April 28, 2022</span>
+                    <p>Create the structure with HTML. The first thing you have to learn is HTML, which is the standard markup language for creating web pages.</p>
+                </div>
+            </div>
+            <div class="single-blog">
+                <div class="single-blog__img" >
+                    <img src="assets/images/css.jpeg"style="height:300px;width: 170px;"   alt="blog image">
+                </div>
+                <div class="single-blog__text">
+                    <h4>CSS</h4>
+                    <span>On June 12, 2022</span>
+                    <p>Style with CSS. The next step is to learn CSS, to set the layout of your web page with beautiful colors, fonts, and much more.</p>
+                </div>
+            </div>
+            <div class="single-blog">
+                <div class="single-blog__img">
+                    <img src="assets/images/Js.jpeg" style="height:300px;width: 170px;"  alt="blog image">
+                </div>
+                <div class="single-blog__text">
+                    <h4>JavaScript</h4>
+                    <span>On August 20, 2022</span>
+                    <p>Make it interactive with JavaScript. After studying HTML and CSS, you should learn JavaScript to create dynamic and interactive web pages for your users.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Blog end -->
+
+<!-- Quotes -->
+
+<!-- Quotes end -->
+
+<!-- Social -->
+<section class="fh5co-social">
+    <div class="site-container">
+        <div class="social">
+            <h5>Follow me!!</h5>
+            <div class="social-icons">
+                <a href="#" target="_blank"><img src="assets/images/social-twitter.png" alt="social icon"></a>
+                <a href="#" target="_blank"><img src="assets/images/social-pinterest.png" alt="social icon"></a>
+                <a href="#" target="_blank"><img src="assets/images/social-youtube.png" alt="social icon"></a>
+                <a href="#" target="_blank"><img src="assets/images/social-twitter.png" alt="social icon"></a>
+            </div>
+            <h5>Share it!</h5>
+        </div>
+    </div>
+</section>
+<!-- Social -->
+
+<!-- Footer -->
+<footer class="site-footer" id="contact">
+    <div class="site-container">
+        <div class="footer-inner">
+            <div class="footer-info">
+                <div class="footer-info__left">
+                    <img src="assets/images/footer-img.jpg" alt="about me image">
+                 
+                </div>
+                <div class="footer-info__right">
+                    <h5>Get In Touch</h5>
+                    <p class="footer-phone">Phone: +254113327116</p>
+                    <p>Email : wamaithaweru19@gmail.com.com</p>
+                    <div class="social-icons">
+                        <a href="#" target="_blank"><img src="assets/images/social-twitter.png" alt="social icon"></a>
+                        <a href="#" target="_blank"><img src="assets/images/social-pinterest.png" alt="social icon"></a>
+                        <a href="#" target="_blank"><img src="assets/images/social-youtube.png" alt="social icon"></a>
+                        <a href="#" target="_blank"><img src="assets/images/social-twitter.png" alt="social icon"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-contact-form">
+                <h5>Contact Form</h5>
+                <form (ngSubmit)="onSubmit()" #contactForm="ngForm" class="contact-form">
+                    <div class="contact-form__input">
+                         <input type="text" name="name" [(ngModel)]="contacts.name" #name="" 
+                            required 
+                            class="form-control form-control-sm ng-untouched ng-pristine ng-valid"
+                            placeholder="Name">
+
+                           
+                        
+                         <input type="email" name="email" [(ngModel)]="contacts.email" 
+                            required 
+                            class="form-control form-control-sm ng-untouched ng-pristine ng-valid"
+                            placeholder="Email">
+
+                           
+                    </div>
+                    <textarea name="message" [(ngModel)]="contacts.message"  ></textarea>
+                    <!-- <input type="submit" name="submit" value="Submit" class="submit-button"> -->
+                    <button type="submit" class="submit-button" 
+                        (click)="newHero();contactForm.reset()"
+                        [disabled]="!contactForm.form.valid"
+                        >Submit
+                    </button>
+                    
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="site-container footer-bottom-inner">
+            <p>© 2022 Author | Design by betty Weru | All rights Reserved.</p>
+            
+        </div>
+    </div>
+</footer>
+<!-- Footer end - -->
