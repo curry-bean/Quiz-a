@@ -1,0 +1,153 @@
+
+
+
+
+
+<!-- <div [hidden]="submitted">
+    <h1>Hero Form</h1>
+<form (ngSubmit)="onSubmit()" #heroForm="ngForm">
+<div class="container-fluid py-3">
+    {{ model | json }}
+
+    <div class="row my-3">
+      <div class="col">
+        <label for="exampleFormControlInput1" class="form-label">FullName</label>
+        <input type="text" class="form-control form-control-sm ng-untouched ng-pristine ng-valid"
+         id="exampleFormControlInput1" placeholder="Fullname"
+         required
+         [(ngModel)]="model.name" name="name"  #name="ngModel"
+        >
+        <div [hidden]="name.valid || name.pristine"
+          class="alert alert-danger">
+            Name is required
+        </div>
+        
+      </div>
+    </div>
+    <div class="row my-3">
+      <div class="col">
+        <label for="power">Hero Power</label>
+        <select class="form-control ng-untouched ng-pristine ng-valid" id="power" required
+        [(ngModel)]="model.power" name="power"
+        >
+            <option *ngFor="let pow of powers" [value]="pow">{{pow}}</option>
+        </select>
+      </div>
+    </div>
+    <div class="row my-3">
+      <div class="col">
+        <label for="exampleFormControlInput1" class="form-label">Email address</label>
+        <input type="email" class="form-control form-control-sm ng-untouched ng-pristine ng-valid" 
+        id="exampleFormControlInput1" placeholder="name@example.com"
+        required
+        [(ngModel)]="model.email" name="email"
+        >
+      </div>
+    </div>
+    <div class="row my-3">
+        <div class="col">
+            <label for="county">County</label>
+            <select class="form-control ng-untouched ng-pristine ng-valid" id="county" required
+             [(ngModel)]="model.county" name="county"
+            >
+              <option *ngFor="let k of county" [value]="k">{{k}}</option>
+            </select>
+        </div>
+    </div>
+    <div class="row my-3">
+      <div class="col">
+        <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+        <textarea class="form-control form-control-sm ng-untouched ng-pristine ng-valid" 
+        id="exampleFormControlTextarea1" rows="3"
+        [(ngModel)]="model.example" name="example"
+        ></textarea>
+      </div>
+    </div>
+    <div class="row my-3">
+      <div class="col">
+        <div class="form-check form-switch">
+          <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+          <label class="form-check-label" for="flexSwitchCheckDefault">Default switch checkbox input</label>
+        </div>
+      </div>
+    </div>
+    <div class="row my-3">
+      <div class="col">
+        <label for="alterEgo">Alter Ego</label>
+         <input type="text"  class="form-control ng-untouched ng-pristine ng-valid" id="alterEgo"
+            [(ngModel)]="model.alterEgo" name="alterEgo"
+         >
+      </div>
+    </div>
+    <div>
+        <button type="submit" class='btn btn-danger' 
+          (click)="newHero();heroForm.reset()"
+          [disabled]="!heroForm.form.valid"
+        >
+            Submit
+        </button>
+    </div>
+    <div class="row my-3">
+      <div class="col">
+        <button class="btn btn-sm btn-outline-primary" (click)="open(demoModal)">Launch demo modal</button>
+      </div>
+    </div>
+  </div>
+</form> 
+</div>
+
+<!-- load Form -->
+<!-- <div [hidden]="!submitted">
+    <h2>You submitted the following:</h2>
+    <div class="row">
+      <div class="col-xs-3">Name</div>
+      <div class="col-xs-9">{{ model.name }}</div>
+    </div>
+    <div class="row">
+      <div class="col-xs-3">Alter Ego</div>
+      <div class="col-xs-9">{{ model.alterEgo }}</div>
+    </div>
+    <div class="row">
+      <div class="col-xs-3">Power</div>
+      <div class="col-xs-9">{{ model.power }}</div>
+    </div>
+    <div class="row">
+      <div class="col-xs-3">County</div>
+      <div class="col-xs-9">{{ model.county }}</div>
+    </div>
+    <div class="row">
+        <div class="col-xs-3">Email</div>
+        <div class="col-xs-9">{{ model.email }}</div>
+    </div>
+    <div class="row">
+      <div class="col-xs-3">Example</div>
+      <div class="col-xs-9">{{ model.example }}</div>
+    </div>
+    <br>
+    <button type="button" class="btn btn-primary" (click)="submitted=false">Edit</button>
+  </div>
+ -->
+
+
+
+  <!-- <ng-template #demoModal let-modal>
+    <div class="modal-header">
+      <h4 class="modal-title" id="modal-basic-title">Profile update</h4>
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
+    </div>
+    <div class="modal-body">
+      <form>
+        <div class="form-group">
+          <label for="dateOfBirth">Date of birth</label>
+          <div class="input-group">
+            <input id="dateOfBirth" name="dateOfBirth" class="form-control" placeholder="yyyy-mm-dd" ngbDatepicker #dp="ngbDatepicker">
+            <button type="button" class="btn btn-outline-secondary bi bi-calendar" (click)="dp.toggle()"></button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">Save</button>
+    </div>
+  </ng-template>
+   -->
